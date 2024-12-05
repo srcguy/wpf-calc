@@ -10,7 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace guitest
+namespace Guitest
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,19 +26,23 @@ namespace guitest
         {
             if (add.IsChecked == true)
             {
-                output.Content = Convert.ToInt32(input1.Text) + Convert.ToInt32(input2.Text);
+                output.Content = Convert.ToDouble(input1.Text) + Convert.ToDouble(input2.Text);
             }
             else if (sub.IsChecked == true)
             {
-                output.Content = Convert.ToInt32(input1.Text) - Convert.ToInt32(input2.Text);
+                output.Content = Convert.ToDouble(input1.Text) - Convert.ToDouble(input2.Text);
             }
             else if (mul.IsChecked == true)
             {
-                output.Content = Convert.ToInt32(input1.Text) * Convert.ToInt32(input2.Text);
+                output.Content = Convert.ToDouble(input1.Text) * Convert.ToDouble(input2.Text);
             }
             else if (div.IsChecked == true)
             {
-                output.Content = Convert.ToInt32(input1.Text) / Convert.ToInt32(input2.Text);
+                output.Content = Convert.ToDouble(input1.Text) / Convert.ToDouble(input2.Text);
+            }
+            else if (pow.IsChecked == true)
+            {
+                output.Content = Math.Pow(Convert.ToDouble(input1.Text), Convert.ToDouble(input2.Text));
             }
         }
     }

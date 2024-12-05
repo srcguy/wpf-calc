@@ -1,4 +1,4 @@
-﻿<Window x:Class="guitest.MainWindow"
+﻿<Window x:Class="Guitest.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -14,13 +14,13 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Button 
             x:Name="calc" Click="Calc" 
             BorderThickness="2"
-            Height="30" Width="110" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top">Policz</Button>
+            Height="30" Width="110" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">Policz</Button>
         <TextBox 
             x:Name="input1"
             Height="30" Width="50"
@@ -31,16 +31,17 @@
             Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Margin="10"/>
         <Label 
             x:Name="output"
-            Foreground="White" FontSize="24" VerticalAlignment="Bottom" HorizontalAlignment="Center"
-            Grid.Column="1" Grid.Row="0" />
+            Foreground="White" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Center"
+            Grid.Column="1" Grid.Row="1"/>
         <StackPanel
             x:Name="opList"
-            Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="10">
-            <RadioButton Name="add" Foreground="White" GroupName="operations">+</RadioButton>
-            <RadioButton Name="sub" Foreground="White" GroupName="operations">-</RadioButton>
-            <RadioButton Name="mul" Foreground="White" GroupName="operations">*</RadioButton>
-            <RadioButton Name="div" Foreground="White" GroupName="operations">/</RadioButton>
+            Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+            <RadioButton Name="add" Foreground="White" GroupName="operations" FontSize="14">+</RadioButton>
+            <RadioButton Name="sub" Foreground="White" GroupName="operations" FontSize="14">-</RadioButton>
+            <RadioButton Name="mul" Foreground="White" GroupName="operations" FontSize="14">*</RadioButton>
+            <RadioButton Name="div" Foreground="White" GroupName="operations" FontSize="14">/</RadioButton>
+            <RadioButton Name="pow" Foreground="White" GroupName="operations" FontSize="14">^</RadioButton>
         </StackPanel>
-        
+
     </Grid>
 </Window>
