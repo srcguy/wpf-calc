@@ -20,7 +20,7 @@
         <Button 
             x:Name="calc" Click="Calc" 
             BorderThickness="2"
-            Height="30" Width="110" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">Policz</Button>
+            Height="30" Width="110" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">c'mon! do math!</Button>
         <TextBox 
             x:Name="input1"
             Height="30" Width="50"
